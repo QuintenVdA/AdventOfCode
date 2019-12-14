@@ -40,4 +40,14 @@ public class InputReader {
                 .flatMap(Collection::stream)
                 .collect(Collectors.toList());
     }
+
+    /**
+     * Read the lines of the file, split each line on the delimiter and put the results in a separate collection.
+     */
+    public Collection<Collection<String>> readSeparately(final String delimiter) {
+        return read().stream()
+                .map(string -> string.split(delimiter))
+                .map(Arrays::asList)
+                .collect(Collectors.toList());
+    }
 }
