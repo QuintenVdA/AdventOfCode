@@ -7,7 +7,7 @@ input = open("input", "r")
 values = []
 
 for line in input:
-	values.append(int(line))
+    values.append(int(line))
 
 input.close()
 
