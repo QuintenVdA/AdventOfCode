@@ -21,3 +21,4 @@ while result2 in allSeats:
 
 print('Part 1: ' + str(result1))
 print('Part 2: ' + str(result2))
+
